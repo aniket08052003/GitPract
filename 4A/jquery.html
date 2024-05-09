@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fruit Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <style>
+        /* Custom CSS */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5; /* Set background color for the entire page */
+            color: #333; /* Set text color */
+        }
+        /* Home Page */
+        #home {
+            background-color: #ffcc80; /* Set background color for the home page */
+        }
+        /* Fruit Page */
+        .fruit-page {
+            background-color: #ffcdd2; /* Set background color for fruit pages */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+        }
+        .fruit-img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+        .fruit-price {
+            font-size: 18px;
+            color: #333; /* Set text color */
+            margin-top: 10px;
+        }
+        .fruit-desc {
+            color: #666; /* Set text color */
+        }
+        /* Header and Footer */
+        [data-role="header"], [data-role="footer"] {
+            background-color: #ff8a65; /* Set background color for headers and footers */
+            color: #fff; /* Set text color */
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Add click event handler to fruit images
+            $(".fruit-img").click(function(){
+                // Get the alt attribute of the clicked image (which contains the fruit name)
+                var fruitName = $(this).attr("alt");
+                // Show an alert with the fruit name
+                alert("You clicked on: " + fruitName);
+            });
+        });
+    </script>
+</head>
+<body>
+
+<!-- Home Page -->
+<div data-role="page" id="home">
+    <div data-role="header" data-position="fixed">
+        <h1>Fruit Store</h1>
+    </div>
+
+    <div data-role="content">
+        <p>Welcome to our fruit store! Choose from our selection of fresh fruits.</p>
+        <ul data-role="listview" data-inset="true">
+            <li><a href="#apple">Apple</a></li>
+            <li><a href="#banana">Banana</a></li>
+            <li><a href="#orange">Orange</a></li>
+        </ul>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <h4>&copy; 2024 Fruit Store</h4>
+    </div>
+</div>
+
+<!-- Apple Page -->
+<div data-role="page" id="apple">
+    <div data-role="header" data-position="fixed">
+        <h1>Apple</h1>
+    </div>
+
+    <div class="fruit-page" data-role="content">
+        <img class="fruit-img" src="./Images/istockphoto-185262648-612x612.jpg" alt="Apple">
+        <p class="fruit-price">Price: $1.99 per pound</p>
+        <p class="fruit-desc">Crisp and juicy apples, perfect for snacking!</p>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="arrow-l">Back</a>
+    </div>
+</div>
+
+<!-- Banana Page -->
+<div data-role="page" id="banana">
+    <div data-role="header" data-position="fixed">
+        <h1>Banana</h1>
+    </div>
+
+    <div class="fruit-page" data-role="content">
+        <img class="fruit-img" src="./Images/Banana-Single.jpg" alt="Banana">
+        <p class="fruit-price">Price: $0.99 per pound</p>
+        <p class="fruit-desc">Sweet and creamy bananas, a healthy treat!</p>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="arrow-l">Back</a>
+    </div>
+</div>
+
+<!-- Orange Page -->
+<div data-role="page" id="orange">
+    <div data-role="header" data-position="fixed">
+        <h1>Orange</h1>
+    </div>
+
+    <div class="fruit-page" data-role="content">
+        <img class="fruit-img" src="./Images/istockphoto-185284489-612x612.jpg" alt="Orange">
+        <p class="fruit-price">Price: $2.49 per pound</p>
+        <p class="fruit-desc">Tangy and refreshing oranges, packed with vitamin C!</p>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="arrow-l">Back</a>
+    </div>
+</div>
+
+</body>
+</html>

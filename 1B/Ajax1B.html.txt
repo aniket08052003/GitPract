@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+body{
+ background-color:skyblue;
+}
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+           
+
+        }
+        label{
+            text-align: start;
+        }
+        .tableDisplay{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        table{
+            width: 70%;
+            border-collapse: collapse;
+            padding: 3px;
+        }
+        tr{
+            border-collapse: collapse;
+        }
+        td{
+            padding: 10px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="" method="post" id="form">
+            <h2>Student Details</h2>
+            <span>
+
+                <label for="">Name: </label>
+                <input type="text" name="name" placeholder="Enter name"> <br><br>
+            </span>
+            <span>
+
+                <label for="">Roll no: </label>
+                <input type="text" name="roll" placeholder="Enter name"> <br><br>
+            </span>
+            <span>
+                <label for="">Division: </label>
+                <input type="text" name="div" placeholder="Enter name"> <br><br>
+            </span>
+            <input type="submit" value="Add data"> <br><br>
+        </form>
+    </div> 
+    <div class="tableDisplay">
+        <table>
+            <th>
+              <tr>
+                <td>Name</td>
+                <td>Roll no</td>
+                <td>Division</td>
+              </tr>
+            </th>
+            <tbody id="displayArea"></tbody>
+          </table>
+    </div>
+    <script type="text/javascript">
+        $('#form').submit(function(event){
+            event.preventDefault();
+            var $inputs = $('#form :input');
+            var values = {};
+            $inputs.each(function(){
+                values[this.name] = $(this).val();
+            });
+
+            $('#displayArea').append("<tr><td>" + values.name + "</td><td>" + values.roll + "</td><td>" + values.div + "</td></tr>");
+        });
+    </script>
+</body>
+</html>

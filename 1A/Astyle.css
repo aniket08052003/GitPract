@@ -1,0 +1,247 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+body{
+    background-image: linear-gradient(to top, rgba(0,0,0,0.4)50%, rgba(0,0,0,0.4)50%),url("data:image/jpeg;base64,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");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative; 
+} 
+nav{
+  display:flex;
+  height:80px;
+  width:100%;
+  background:linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%) ;
+  align-items: center;
+  justify-content:space-between;
+  padding:0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color:maroon;
+  font-size:40px;
+  font-weight:600;
+  font-family:Candara;
+}
+
+nav ul{
+  display:flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+nav ul li{
+  margin:0 5px;
+}
+nav ul li a{
+  color:#f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding:8px 15px;
+  border-radius: 5px;
+  letter-spacing:1px;
+  border-bottom:1.5px solid transparent;
+  transition:all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  border-color:orange;
+  color:orange;
+}
+nav .menu-btn i{
+  color:#fff;
+  font-size:22px;
+  cursor: pointer;
+  display:none;
+}
+input[type="checkbox"]{
+  display:none;
+}
+.content{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align: center;
+  width:100%;
+  padding:0 30px;
+  color:#fff;
+}
+.content div{
+  font-size: 40px;
+  font-weight: 700;
+}
+@media (max-width:1000px){
+  nav{
+    padding:0 40px 0px 50px;
+  }
+}
+@media (max-width:920px){
+  nav .menu-btn i{
+    display:block;
+  }
+  #click:Checked ~ .menu-btn i:before{
+    content:'\f00d';
+  }
+  nav ul{
+    position:fixed;
+    top:80px;
+    left:-100%;
+    background:#111;
+    height:100vh;
+    width:100%;
+    text-align: center;
+    z-index:10;
+    display:block;
+    transition:all 0.3s ease;
+  }
+  #click:Checked ~ ul {
+    left:0px;
+  }
+  nav ul li{
+    width:100%;
+    margin:40px 0;
+  }
+  nav ul li a{
+    width:100%;
+    margin-left:-100%;
+    display:block;
+    font-size: 20px;
+    transition:0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  #click:Checked ~ ul li a{
+    margin-left:0px;
+  }
+}
+.social_icon span{
+font-size:  8px;
+margin-left: 10px;
+color:lightseagreen ;
+}
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+.social_icon{
+position: absolute;
+right: 10px;
+top: 20px;
+}
+
+
+
+
+
+
+.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top: 100px;
+}
+.content-section{
+	float: left;
+	width: 55%;
+}
+.image-section{
+	float: right;
+	width: 40%;
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+}
+
+.content-section .h1{
+
+	text-transform: uppercase;
+	font-size: 28px;
+	color:black;
+font-family:"Times New Roman", Times, serif;;
+font-size:300%;
+text-align: center;
+}
+.content-section .content h3{
+	margin-top: 20px;
+	color:#5d5d5d;
+	font-size: 21px;
+}
+.content-section .content p{
+	margin-top: 10px;
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.content-section .content .button{
+	margin-top: 30px;
+}
+.content-section .content .button a{
+	background-color: #3d3d3d;
+	padding:12px 40px;
+	text-decoration: none;
+	color:#fff;
+	font-size: 25px;
+	letter-spacing: 1.5px;
+}
+.content-section .content .button a:hover{
+	background-color: #a52a2a;
+	color:#fff;
+}
+.content-section .social{
+	margin: 40px 40px;
+}
+.content-section .social i{
+	color:#a52a2a;
+	font-size: 30px;
+	padding:0px 10px;
+}
+.content-section .social i:hover{
+	color:#3d3d3d;
+}
+@media screen and (max-width: 768px){
+	.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top:50px;
+}
+.content-section{
+
+	width:100%;
+	display: block;
+	margin:auto;
+}
+.image-section{
+	float:none;
+	width:100%;
+	
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin:auto;
+}
+.content-section .title{
+	text-align: center;
+	font-size: 19px;
+}
+.content-section .content .button{
+	text-align: center;
+}
+.content-section .content .button a{
+	padding:9px 30px;
+}
+.content-section .social{
+	text-align: center;
+}
+
+}

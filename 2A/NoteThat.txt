@@ -1,0 +1,34 @@
+1)For first (time) commit>>
+PS C:\Users\Vaishnavi\Desktop\2A\part-a> git commit -m "First commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Vaishnavi@LAPTOP-5D1JLTN1.(none)')
+
+
+------------First run these commands --->> 1) PS C:\Users\Vaishnavi\Desktop\2A\part-a> git config --global user.email "vaishnavinaphade15@gmail.com"
+
+2)PS C:\Users\Vaishnavi\Desktop\2A\part-a> git config --global user.name "NaphadeVaishnavi15"   
+
+--->>After that run  --->>PS C:\Users\Vaishnavi\Desktop\2A\part-a> git commit -m "First commit"
+[master (root-commit) fe35b74] First commit
+ 1 file changed, 2 insertions(+)
+ create mode 100644 file1.txt
+   
+
+
+
+1) git push -u origin master>>sign in screen>>done>>Authentication Succeeded>>refresh github.com>>1st file pushesh successfully
+
+2)if "git" is not recognize>>add environment variable
+
+3)For pushing 2nd file>>create new file......>>
